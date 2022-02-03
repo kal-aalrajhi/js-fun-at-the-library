@@ -79,25 +79,35 @@ if (isFavorite) {
 
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
-
+var books = ["Meno", "Gorgias", "The Sophist and the Statesman", "Being & Time", "The Politics"];
+console.log(books);
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+console.log(books[2]);
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
-
+var belowTwoHundred = [120, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20, 10];
+console.log(belowTwoHundred);
 
 // Write the code to access the 5th element of the array, using bracket notation.
-
+console.log(belowTwoHundred[4]);
 
 //------------------------- Objects -------------------------//
 
 // Create a new variable "dictionary" and assign to it an object literal with two
 // keys: name, and hasThesaurus. The value for name should the string 'Webster's', and
 // the value for hasThesaurus should be false
-
+var dictionary = {
+  name: 'Webster\'s',
+  hasThesaurus: false,
+};
+console.log(dictionary);
+console.log(dictionary.name);
+console.log(dictionary.hasThesaurus);
 
 // Write the code to add the key of pageCount, with the value of 720. Use dot
 // notation to do this. DO NOT modify your code from above.
+dictionary.pageCount = 720;
+console.log(dictionary);
