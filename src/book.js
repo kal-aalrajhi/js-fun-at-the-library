@@ -25,25 +25,24 @@ function saveReview(review, reviews){
   if (!duplicate) reviews.push(review);
 }
 
-// test for saveReview
-var reviews = ["Garbage!", "Good stuff.", "An astounding success", "Nope."];
-saveReview("An astounding success", reviews);
-console.log(reviews);
+function calculatePageCount(bookTitle) {
+  // // Alternate way to do it and skip spaces, so we actaully only count letters
+  // var letterCount = bookTitle.length
+  // for (var i = 0; i < bookTitle.length; i++) {
+  //   Avoid counting spaces as letters
+  //   if (bookTitle[i] != " ") letterCount++;
+  //   letterCount++;
+  // }
+  // return letterCount * 20;
+  return bookTitle.length * 20;
+}
 
-// while (!duplicate) {
-//   if (review === reviews[i]) {
-//     console.log("DUPLICATE!");
-//     duplicate = true;
-//   }
-//   // Go to next review
-//   i++;
-// }
 
 module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
-  // calculatePageCount,
+  calculatePageCount,
   // writeBook,
   // editBook
 }
