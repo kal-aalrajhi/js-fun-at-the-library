@@ -16,9 +16,14 @@ class Librarian {
     // Store genre based shelf array
     var genreShelf = this.library.shelves['fantasy']; // make dynamic
     // Check if book is on shelf
-    if (genreShelf.includes(bookTitle)) return `Yes we have ${bookTitle}`;
-    else return `Sorry, we do not have ${bookTitle}`;
+    for (var i = 0; i < genreShelf.length; i++) {
+      if (genreShelf[i].title === bookTitle) return `Yes, we have ${bookTitle}`;
+    }
+    // Book not found
+    return `Sorry, we do not have ${bookTitle}`;
   }
+
+  //
 }
 
 
