@@ -27,6 +27,7 @@ class Librarian {
     return `Sorry, we do not have ${bookTitle}`;
   }
 
+  // Calculate late fee
   calculateLateFee(daysLate) {
     return Math.ceil(daysLate * 0.25);
   }
