@@ -16,9 +16,10 @@ function buildMainCharacter(name, age, pronouns) {
 
 // Add reviews to an array, but won't add duplicate reviews.
 function saveReview(review, reviewsArr) {
-  if (!reviewsArr.includes(review)) reviewsArr.push(review);
+  if (!reviewsArr.includes(review)) {
+    reviewsArr.push(review);
+  }
 }
-
 /*
   Alternate way to do saveReview function:
   -doesn't use .includes method

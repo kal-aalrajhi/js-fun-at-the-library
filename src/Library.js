@@ -20,7 +20,7 @@ function addBook(library, book) {
 // Checkout book
 function checkoutBook(library, bookTitle, genre) {
   // Array of book objects on genre specific shelf
-  var shelf = library.shelves[genre]
+  var shelf = library.shelves[genre];
   // Iterate over shelf titles to find if book title is available for checkout
   for (var i = 0; i < shelf.length; i++) {
     // Book is available

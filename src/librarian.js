@@ -1,5 +1,4 @@
 class Librarian {
-  // (string, object)
   constructor(name, library) {
     this.name = name;
     this.library = library; // stores a library object
@@ -7,8 +6,11 @@ class Librarian {
 
   // Greet patron by name based on time of day
   greetPatron(patronName, isMorning) {
-    if (isMorning) return `Good morning, ${patronName}!`;
-    else return `Hello, ${patronName}!`;
+    if (isMorning) {
+      return `Good morning, ${patronName}!`;
+    } else {
+      return `Hello, ${patronName}!`;
+    }
   }
 
   // Find book bases off book title and check it out
